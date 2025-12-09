@@ -2,21 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro - Biblioteca CESDE</title>
 </head>
+
 <body>
+
     
-</body>
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Biblioteca CESDE</title>
-</head>
-
-<body>
-
     <header>
         <h1>CESDE</h1>
 
@@ -26,9 +17,7 @@
             <a href="audio.html">Audio Libro</a> |
             <a href="contacto.html">Contáctanos</a> |
             <a href="login.html">Login</a> |
-            <a href="registro.html">Regístrate</a> 
-
-        
+            <a href="registro.html">Regístrate</a>
         </nav>
     </header>
 
@@ -36,22 +25,35 @@
 
     
     <main>
-        <section>
-            <h2>Descubre tu próxima gran historia.</h2>
 
-            <p>
-                Miles de libros a un clic de distancia.<br>
-                Las mejores recomendaciones personalizadas para amantes de la lectura.
-            </p>
+        <h2>Regístrate</h2>
 
-            <p>
-                <a href="">Explorar Libros</a>
-            </p>
-        </section>
+        <form>
 
-        <section>
-            <img src="" alt="">
-        </section>
+            <label for="documento">Documento de identidad:</label><br>
+            <input type="text" id="documento" name="documento"><br><br>
+
+            <label for="nombre">Nombres y apellidos:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo"><br><br>
+
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" id="contrasena" name="contrasena"><br><br>
+
+            <label for="contrasena2">Contraseña nuevamente:</label><br>
+            <input type="password" id="contrasena2" name="contrasena2"><br><br>
+
+            <label for="programa">Programa que cursa:</label><br>
+            <input type="text" id="programa" name="programa"><br><br>
+
+            <button type="submit">Crear una cuenta</button><br><br>
+
+        </form>
+
+        <a href="login.html">Login</a>
+
     </main>
 
     <hr>
@@ -60,12 +62,10 @@
     <footer>
 
         <h3>CESDE</h3>
-        
-        <section>
 
+        <section>
             <h4>Explorar Libros</h4>
             <h4>Categorias</h4>
-            
             <ul>
                 <li>Programación</li>
                 <li>Aventura</li>
