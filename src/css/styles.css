@@ -1,0 +1,51 @@
+/* Estilos genrales para que toda la pagina tenga la misma tipografia y sin margenes por defecto*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/*Le di color y espacio al header para que se no te que es la parte superior del sitio
+ademas se usa el flex para alinear el logo y el menu en una sola fila*/
+header {
+    background-color: #141414;
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+/*controlar el tamaño del logo cesde */
+header img {
+    width: 120px;
+}
+
+
+/*espaciado claro de los "a"  quitar el subrayado*/
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/*para poner los links en fila - centrarlos erticalmente - espacio uniforme entre ellos separar el logo del menu */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+}
+
+/*Le quité el estilo por defecto al enlace principal para que se vea más limpio y coherente con el diseño*/
+main a {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+}
+
+/* Espaciado del contenido principal para evitar
+   que el texto quede pegado a los bordes de la página */
+main {
+    padding: 20px;
+}
