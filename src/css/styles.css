@@ -80,7 +80,41 @@ main a:hover {
     background-color: #c2185b;
 }
 
+/*diferecniar el footer - el padding evita que el contenid quede pegado a los bordes*/
+footer { 
+    background-color: #141414;
+    color: white;
+    padding: 60px 40px;
+}
 
+/*organizar las seccion en columnas --- display: flex pone las secciones en fila -- space-between reparte espacio entre colomnas
+flex wrap permiten que baje si la pantalla es pequeña*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*se quita los estilos que vienen por defecto de las listas*/
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*espacio entre los elementos de las listas*/
+footer ul li {
+    margin-bottom: 8px;
+}
+
+/*espacio debajo de los titulos para diferenciarlos */
+footer h4 {
+    margin-bottom: 15px;
+}
+
+/*contolo el ancho de cada columna para que el contenido no se estire muchoo*/
+footer section {
+    max-width: 300px;
+}
 
 
 
