@@ -75,7 +75,7 @@ main a {
     font-weight: bold;
 }
 
-/*Efecto al pasar el mause por el boton "explorar libros*/
+/*Efecto al pasar el mause por el boton por los main a*/
 main a:hover {
     background-color: #c2185b;
 }
@@ -115,6 +115,76 @@ footer h4 {
 footer section {
     max-width: 300px;
 }
+
+
+/* estilo del boton"crear cuenta */
+form button {
+    background-color: #e91e63;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*efecto al pasar el mouse por el boton de crear cuenta */
+form button:hover {
+    background-color: #c2185b;
+}
+
+/*estilo del boton de login*/
+.btn-login {
+    display: inline-block;
+    background-color: transparent;
+    color: #e91e63;
+    padding: 12px 24px;
+    border: 2px solid #e91e63;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 70%;
+}
+
+/*sombra para el botin login*/
+.btn-login:hover {
+    background-color: #e91e63;
+    color: white;
+}
+
+
+
+
+/*le doy estilo y forma a los campos del formulario*/
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/*alinear el titulo con formulario*/
+.registro main h2 {
+    margin-left: 70%;
+}
+
+
+
+/* formuario a laderecha y no puede ser mas ancho de 420px */
+.registro main form {
+    max-width: 420px;
+    margin-left: 70%;
+}
+
+
+
+
+
 /* Para que el texto que dice que va en las cajasde texto este en negrita con margen y un espaciado*/
 label {
     font-weight: bold;
@@ -126,5 +196,6 @@ section ul li a {
     color: inherit;            
     text-decoration: none;     
 }
+
 
 
