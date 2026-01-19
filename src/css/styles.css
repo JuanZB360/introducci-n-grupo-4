@@ -8,7 +8,7 @@ body {
 /*Le di color y espacio al header para que se no te que es la parte superior del sitio
 ademas se usa el flex para alinear el logo y el menu en una sola fila*/
 header {
-    background-color: #141414;
+    background-color: #e91e63;
     color: white;
     padding: 20px;
 
@@ -82,7 +82,7 @@ main a:hover {
 
 /*diferecniar el footer - el padding evita que el contenid quede pegado a los bordes*/
 footer { 
-    background-color: #141414;
+    background-color: #e91e63;
     color: white;
     padding: 60px 40px;
 }
@@ -115,6 +115,7 @@ footer h4 {
 footer section {
     max-width: 300px;
 }
+
 
 /* estilo del boton"crear cuenta */
 form button {
@@ -182,6 +183,19 @@ form input {
 
 
 
+
+
+/* Para que el texto que dice que va en las cajasde texto este en negrita con margen y un espaciado*/
+label {
+    font-weight: bold;
+    display: inline-block; 
+    margin-bottom: 5px;    
+}
+/* Hereda el color del texto de su padre, Quita la línea de abajo de los link del footer */
+section ul li a {
+    color: inherit;            
+    text-decoration: none;     
+}
 
 
 
