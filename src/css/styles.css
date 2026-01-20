@@ -218,3 +218,10 @@ section ul li a {
     background-image: url(/src/fondo-main.jpeg);
     
 }
+
+.changepassword {
+    position: absolute;
+  min-height: 100vh;
+    background-image: url(/src/fondo-main.jpeg);
+    
+}
