@@ -219,6 +219,62 @@ section ul li a {
     
 }
 
+
+/* ===== DVT Estilos básicos para la página Reserva de Libro ===== */
+
+/* Contenedor principal */
+main {
+    padding: 20px;
+}
+
+/* Secciones dentro del main */
+main section {
+    margin-bottom: 20px;
+}
+
+/* darle estilo a los titulos */
+main h2 {
+    color: #e91e63;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* organiza la lista de categorias */
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+
+/* ajustar el boton en todo al espacio */
+audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* estilo para el boton "Reserva libro fisico" */
+main button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #c2185b;
+}
+
+
+
+
 .changepassword {
     position: absolute;
   min-height: 100vh;

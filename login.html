@@ -3,74 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+
+    <title>Cambiar Contraseña - Biblioteca CESDE</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="icon" type="image/png" href="src/logo%20cesde.png">
+
+
+    <!-- Recomendación adicional: Etiqueta de descripción (Vital para SEO) -->
+    <meta name="description" content="Accede a miles de libros digitales y consulta la disponibilidad de libros
+             físicos para estudiantes. Recursos académicos actualizados para investigación
+              y estudio.">
+
+    <!-- Palabras clave específicas de tu biblioteca -->
+    <meta name="keywords" content="biblioteca virtual, préstamo de libros, libros académicos,
+             PDF educativos, catálogo de libros físicos, recursos para estudiantes,
+              bibliografía universitaria">
+
+    <!-- Nombre de la institución o bibliotecario responsable -->
+    <meta name="author" content="Biblioteca Central Cesde - Andres Felipe Mejia,
+         Juan Zapata, Deiby Valencia, Felipe Villa">
+
+    <!-- Permite que Google indexe tus libros y recursos -->
+    <meta name="robots" content="index, follow">
+
 </head>
-<body>
-    <header>
-        <section>
-            <img src="./src/logo cesde.png" alt="cesde" width="140px" height="50px">
-        </section>
-        <section>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="login.html">Reserva</a>
-                <a href="login.html">Audio Libro</a>
-                <a href="login.html">contactanos</a>
-            </nav>
-        </section>
-        <section>
-            <nav>
-                <a href="login.html">Login</a>
-                <a href="registro.html">Registrarse</a>
-            </nav>
-        </section>
+
+<body class="changepassword"></body>
+
+
+    <!-- Para personas con discapacidadauditiva -->
+    <header role="banner">
+        <!-- Título principal de la biblioteca -->
+        <h1>
+            <a href="index.html">
+                <img src="src/logo-blanco.png" alt="Logo CESDE">
+            </a>
+        </h1>
+
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Home</a> 
+            <a href="reserva.html">Reserva</a> 
+            <a href="audiolibros.html">Audio Libro</a> 
+            <a href="contacto.html">Contáctanos</a> 
+            <a href="registro.html">Regristrate</a>
+            <a href="login.html">Iniciar Sesion</a>
+            
+        </nav>
     </header>
     <main>
-        <h1>Iniciar Sesión</h1>
-
+        
         <form action="#">
-            <input type="email" placeholder="Usuario/Correo electronico">
-            <a href="changepassword.html">¿Olvidate tu contraseña?</a>
-            <input type="password" placeholder="Contraseña">
+            <h1>Iniciar Sesión</h1><br>
+            <input type="email" placeholder="Usuario/Correo electronico"><br><br>
+            <input type="password" placeholder="Contraseña"><br><br>
             <button type="submit">Login</button>
-            <a href="registro.html">Crearcuenta</a>
+            <a href="registro.html">Crearcuenta</a><br><br>
+            <a href="changepassword.html">¿Olvidate tu contraseña?</a>
         </form>
     </main>
-    <footer>
+    <footer role="contentinfo">
+        <h2>
+             <a href="index.html">
+                <img src="src/logo-blanco.png" alt="Logo CESDE">
+            </a>
+        </h2>
 
-        <h3>CESDE</h3>
+        <!-- Sección de Navegación / Categorías -->
+        <section aria-labelledby="footer-libros">
+            
+                <ul>
+                    <h3 id="footer-libros">Explorar Libros y Categorías</h3>
+                    <li><a href="#">Programación</a></li>
+                    <li><a href="#">Aventura</a></li>
+                    <li><a href="#">Ficción</a></li>
+                    <li><a href="#">Superación personal</a></li>
+                    <li><a href="#">Emprendimiento</a></li>
+                    <li><a href="#">Salud</a></li>
+                    <li><a href="#">Psicología</a></li>
+                </ul>
+            </section>
 
-        <section>
-            <h4>Explorar Libros</h4>
-            <h4>Categorias</h4>
-            <ul>
-                <li>Programación</li>
-                <li>Aventura</li>
-                <li>Ficción</li>
-                <li>Superación personal</li>
-                <li>Emprendimiento</li>
-                <li>Salud</li>
-                <li>Psicología</li>
-            </ul>
-        </section>
+            <!-- Información de Contacto Profesional -->
+            <section aria-labelledby="footer-contact">
+                <h3 id="footer-contact">Información de contacto</h3>
+                <address>
+                    <ul>
+                        <li>Teléfono: <a href="tel:+576042314121">604 231 4121</a></li>
+                        <li>Celular: <a href="https://wa.me">312 123 0210</a></li>
+                        <li>Correo: <a href="mailto:biblioteca@cesde.net">biblioteca@cesde.net</a></li>
+                    </ul>
+                </address>
+            </section>
 
-        <section>
-            <h4>Información de contacto</h4>
-            <ul>
-                <li>Teléfono: 604 231 4121</li>
-                <li>Celular: 312 123 0210</li>
-                <li>Correo: biblioteca@cesde.net</li>
-            </ul>
-        </section>
+            <!-- Redes Sociales -->
+            <section aria-labelledby="footer-social">
+                <h3 id="footer-social">Redes Sociales</h3>
+                <ul>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram: @bibliocesde</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook: Biblioteca Cesde</a>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li>Instagram: @bibliocesde</li>
-                <li>Facebook: Biblioteca Cesde</li>
-            </ul>
-        </section>
-
+            <!-- Pie de página final -->
+            <div>
+                <p>&copy; 2026 CESDE - Biblioteca. Todos los derechos reservados.</p>
+            </div>
     </footer>
 </body>
 </html>
