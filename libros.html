@@ -3,132 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libros.css">
     <title>Libros</title>
 </head>
 <body>
-    <header>
-        <section>
-            <img src="./src/logo cesde.png" alt="cesde" width="140px" height="50px">
+    <header class="header">
+        <section class="menu-logo">
+            <a href="index.html"><img class="logo-cesde" src="./src/logo-blanco.png" alt="cesde" width="140px" height="50px"></a>
         </section>
-        <section>
-            <nav>
-                <a href="profile.html">Home</a>
-                <a href="libros.html">Reserva</a>
-                <a href="libros.html">Audio Libro</a>
-                <a href="profile.html">contactanos</a>
+        <section class="menu-principal">
+            <nav class="contenedor-menu">
+                <li class="opcion-menu"><a class="enlace-menu-principal" href="profile.html">Home</a></li>
+                <li class="opcion-menu"><a class="enlace-menu-principal" href="reservaLibro.html">Reserva</a></li>
+                <li class="opcion-menu"><a class="enlace-menu-principal" href="libros.html">Audio Libro</a></li>
+                <li class="opcion-menu"><a class="enlace-menu-principal" href="profile.html">contactanos</a></li>
             </nav>
         </section>
-        <section>
-            <nav>
-                <a href="editprofile.html"><img src="./src/descargar.jpg" alt="perfil" width="40"></a>
+        <section class="menu-perfil">
+            <nav class="contenedor-img-perfil">
+                <a class="enlace-perfil" href="editprofile.html"><img class="img-perfil" src="./src/descargar.jpg" alt="perfil" width="40"></a>
             </nav>
         </section>
     </header>
-    <aside>
-        <nav>
-            <a href="profile.html"><img src="./src/atras.png" alt="atras" width="40"></a>
-            <h2>Categorias</h2>
-            <ul>
-                <li>Programacion</li>
-                <li>Aventura</li>
-                <li>Ficcion</li>
-                <li>Superacion Personal</li>
-                <li>Emprendimiento</li>
-                <li>Salud</li>
-                <li>Psicología</li>
-            </ul>
-        </nav>
-    </aside>
-    <main>
-        <section>
-            <form action="libros.html">
-                <input type="search">
-                <button type="submit">Buscar</button>
-            </form>
+    <main class="cuerpo-pagina">
+        <aside class=" contenedor-menu-lateral">
+            <nav class="menu-lateral">
+                <a class="enlace-atras" href="profile.html"><img class="img-atras" src="./src/atras.png" alt="atras" width="40"></a>
+                <h2 class="caractegorias-titulo">Categorias</h2>
+                <ul class="lista-lateral">
+                    <li class="opciones-lista-lateral">Programacion</li>
+                    <li class="opciones-lista-lateral">Aventura</li>
+                    <li class="opciones-lista-lateral">Ficcion</li>
+                    <li class="opciones-lista-lateral">Superacion Personal</li>
+                    <li class="opciones-lista-lateral">Emprendimiento</li>
+                    <li class="opciones-lista-lateral">Salud</li>
+                    <li class="opciones-lista-lateral">Psicología</li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="lista-libros">
+            <section class="contenedor-barra-busqueda">
+                <form  class="formulario-busqueda" action="libros.html">
+                    <input class="barra-busqueda" type="search" placeholder="Buscar">
+                    <button class="boton-buscar" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-lupa">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg></button>
+                </form>
+            </section>
+            <section class="catalogo-libros">
+                <div class="libro">
+                    <img class="portada-libro" src="./src/codigo limpio.jpeg" alt="codigo Limpio" >
+                    <h3 class="titulo-libro">Codigo Limpio</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Robert C martin</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>       
+                    </div>
+                </div>
+
+                <div class="libro">
+                    <img class="portada-libro" src="./src/Desarrollo web con React.jpeg" alt="Desarrollo web con React" >
+                    <h3 class="titulo-libro">Desarrollo web con React</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Pello Xabier Altadill Izura</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>
+                    </div>                    
+                </div>
+                <div class="libro">
+                    <img class="portada-libro" src="./src/Eloquent JavaScript.jpeg" alt="Eloquent JavaScript" >
+                    <h3 class="titulo-libro">Eloquent JavaScript</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Marijn Haverbeke</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>
+                    </div>                    
+                </div>
+                <div class="libro">
+                    <img class="portada-libro" src="./src/java para novatos.jpeg" alt="java para novatos" >
+                    <h3 class="titulo-libro">java para novatos</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">A. M. Vozmediano</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>
+                    </div>                    
+                </div>
+                <div class="libro">
+                    <img class="portada-libro" src="./src/Spring boot & Angular Desarrollo de webapp seguras.jpeg" alt="Spring boot & Angular Desarrollo de webapp seguras" >
+                    <h3 class="titulo-libro">Spring boot & Angular Desarrollo de webapp seguras</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Carlos Ruiz López</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>
+                    </div>                    
+                </div>
+                <div class="libro">
+                    <img class="portada-libro" src="./src/codigo limpio.jpeg" alt="codigo Limpio" >
+                    <h3 class="titulo-libro">Codigo Limpio</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Robert C martin</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>       
+                    </div>
+                </div>
+
+                <div class="libro">
+                    <img class="portada-libro" src="./src/Desarrollo web con React.jpeg" alt="Desarrollo web con React" >
+                    <h3 class="titulo-libro">Desarrollo web con React</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Pello Xabier Altadill Izura</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>
+                    </div>                    
+                </div>
+                <div class="libro">
+                    <img class="portada-libro" src="./src/Eloquent JavaScript.jpeg" alt="Eloquent JavaScript" >
+                    <h3 class="titulo-libro">Eloquent JavaScript</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Marijn Haverbeke</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>
+                    </div>                    
+                </div>
+                <div class="libro">
+                    <img class="portada-libro" src="./src/codigo limpio.jpeg" alt="codigo Limpio" >
+                    <h3 class="titulo-libro">Codigo Limpio</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Robert C martin</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>       
+                    </div>
+                </div>
+
+                <div class="libro">
+                    <img class="portada-libro" src="./src/Desarrollo web con React.jpeg" alt="Desarrollo web con React" >
+                    <h3 class="titulo-libro">Desarrollo web con React</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Pello Xabier Altadill Izura</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        <a class="ver-lbro" href="reservaLibro.html">ver Libro</a>
+                    </div>                    
+                </div>
+                <div class="libro">
+                    <img class="portada-libro" src="./src/Eloquent JavaScript.jpeg" alt="Eloquent JavaScript" >
+                    <h3 class="titulo-libro">Eloquent JavaScript</h3>
+                    <div class="contenido-card">
+                        <p class="autor-libro">Marijn Haverbeke</p>
+                        <img class="estrellas" src="./src/estrellas.png" alt="estrellas" width="120px">
+                        
+                        <a class="ver-libro" href="reservaLibro.html">ver Libro</a>
+                    </div>                    
+                </div>
+            </section>
         </section>
-        <br><br>
-        <section>
-            <div>
-                <img src="./src/codigo limpio.jpeg" alt="codigo Limpio" >
-                <h3>Codigo Limpio</h3>
-                <p>Robert C martin</p>
-                <img src="./src/estrellas.png" alt="estrellas" width="120px">
-                <br>
-                <a href="reservaLibro.html">ver Libro</a>
-            </div>
-            <br>
-            <div>
-                <img src="./src/Desarrollo web con React.jpeg" alt="Desarrollo web con React" >
-                <h3>Desarrollo web con React</h3>
-                <p>Pello Xabier Altadill Izura</p>
-                <img src="./src/estrellas.png" alt="estrellas" width="120px">
-                <br>
-                <a href="reservaLibro.html">ver Libro</a>
-            </div>
-            <br>
-            <div>
-                <img src="./src/Eloquent JavaScript.jpeg" alt="Eloquent JavaScript" >
-                <h3>Eloquent JavaScript</h3>
-                <p>Marijn Haverbeke</p>
-                <img src="./src/estrellas.png" alt="estrellas" width="120px">
-                <br>
-                <a href="reservaLibro.html">ver Libro</a>
-            </div>
-            <br>
-            <div>
-                <img src="./src/java para novatos.jpeg" alt="java para novatos" >
-                <h3>java para novatos</h3>
-                <p>A. M. Vozmediano</p>
-                <img src="./src/estrellas.png" alt="estrellas" width="120px">
-                <br>
-                <a href="reservaLibro.html">ver Libro</a>
-            </div>
-            <div>
-                <img src="./src/Spring boot & Angular Desarrollo de webapp seguras.jpeg" alt="Spring boot & Angular Desarrollo de webapp seguras" >
-                <h3>Spring boot & Angular Desarrollo de webapp seguras</h3>
-                <p>Carlos Ruiz López</p>
-                <img src="./src/estrellas.png" alt="estrellas" width="120px">
-                <br>
-                <a href="reservaLibro.html">ver Libro</a>
-            </div>
-        </section>
-        <br><br>
+        
     </main>
-    <footer>
+    <footer class="pie-pagina">
 
-        <h3>CESDE</h3>
-
-        <section>
-            <h4>Explorar Libros</h4>
-            <h4>Categorias</h4>
-            <ul>
-                <li>Programación</li>
-                <li>Aventura</li>
-                <li>Ficción</li>
-                <li>Superación personal</li>
-                <li>Emprendimiento</li>
-                <li>Salud</li>
-                <li>Psicología</li>
-            </ul>
+        <section class="contenedor-logo-pie-pagina">
+            <a class="enlace-logo-pie-pagina" href="index.html"><img class="logo-cesde-pie-pagina" src="./src/logo-blanco.png" alt="cesde" width="140px" height="50px"></a>
         </section>
+        <div class="informacion-pie-pagina">
+            <section class="categorias-pie-pagina">
+                <h4 class="titulo-pie-pagina">Explorar Libros <br>Categorias</h4>
+                <ul class="lista-desordenada-pie-pagina">
+                    <li class="item-list-pie-pagina">Programación</li>
+                    <li class="item-list-pie-pagina">Aventura</li>
+                    <li class="item-list-pie-pagina">Ficción</li>
+                    <li class="item-list-pie-pagina">Superación personal</li>
+                    <li class="item-list-pie-pagina">Emprendimiento</li>
+                    <li class="item-list-pie-pagina">Salud</li>
+                    <li class="item-list-pie-pagina">Psicología</li>
+                </ul>
+            </section>
 
-        <section>
-            <h4>Información de contacto</h4>
-            <ul>
-                <li>Teléfono: 604 231 4121</li>
-                <li>Celular: 312 123 0210</li>
-                <li>Correo: biblioteca@cesde.net</li>
-            </ul>
-        </section>
+            <section class="informacion-contacto-pie-pagina">
+                <h4 class="titulo-pie-pagina">Información de contacto</h4>
+                <ul class="lista-desordenada-pie-pagina">
+                    <li class="item-list-pie-pagina">Teléfono: 604 231 4121</li>
+                    <li class="item-list-pie-pagina">Celular: 312 123 0210</li>
+                    <li class="item-list-pie-pagina">Correo: biblioteca@cesde.net</li>
+                </ul>
+            </section>
 
-        <section>
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li>Instagram: @bibliocesde</li>
-                <li>Facebook: Biblioteca Cesde</li>
-            </ul>
-        </section>
-
+            <section class="redes-sociales-pie-pagina">
+                <h4 class="titulo-pie-pagina">Redes Sociales</h4>
+                <ul class="lista-desordenada-pie-pagina">
+                    <li class="item-list-pie-pagina">Instagram: @bibliocesde</li>
+                    <li class="item-list-pie-pagina">Facebook: Biblioteca Cesde</li>
+                </ul>
+            </section>
+        </div>
     </footer>
 </body>
 </html>
