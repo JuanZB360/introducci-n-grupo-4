@@ -83,7 +83,7 @@ main a:hover {
 /*diferecniar el footer - el padding evita que el contenid quede pegado a los bordes*/
 footer {
     background-color: #e91e63;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 60px 40px;
 }
 
@@ -214,9 +214,9 @@ section ul li a {
 
 .editprofile {
     position: absolute;
-  min-height: 100vh;
+    min-height: 100vh;
     background-image: url(/src/fondo-main.jpeg);
-    
+    background-repeat: no-repeat;
 }
 
 
@@ -277,7 +277,8 @@ main button:hover {
 
 .changepassword {
     position: absolute;
-  min-height: 100vh;
+    min-height: 100vh;
     background-image: url(/src/fondo-main.jpeg);
-    
+    background-repeat: no-repeat;
+
 }
