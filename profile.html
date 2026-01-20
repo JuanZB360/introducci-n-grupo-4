@@ -2,87 +2,85 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/css/libros.css">
     <title>Biblioteca CESDE</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>CESDE</h1>
-
-        <nav>
-            <a href="profile.html">Home</a> |
-            <a href="libros.html">Reserva</a> |
-            <a href="libros.html">Audio Libro</a> |
-            <a href="profile.html">Contáctanos</a> |
-            <img src="src/Recurso 1.png" alt=""> 
-
-        
-        </nav>
-    </header>
-
-    <hr>
-
-    
-    <main>
-        <section>
-            <h2>Descubre tu próxima gran historia.</h2>
-
-            <p>
+    <header class="header">
+        <section class="menu-logo">
+            <a href="index.html"><img class="logo-cesde" src="./src/logo-blanco.png" alt="cesde" width="140px" height="50px"></a>
+        </section>
+        <section class="menu-principal">
+            <nav class="contenedor-menu">
+                <li class="opcion-menu"><a class="enlace-menu-principal" href="profile.html">Home</a></li>
+                <li class="opcion-menu"><a class="enlace-menu-principal" href="reservaLibro.html">Reserva</a></li>
+                <li class="opcion-menu"><a class="enlace-menu-principal" href="libros.html">Audio Libro</a></li>
+                <li class="opcion-menu"><a class="enlace-menu-principal" href="profile.html">contactanos</a></li>
+            </nav>
+        </section>
+        <section class="menu-perfil">
+            <nav class="contenedor-img-perfil">
+                <a class="enlace-perfil" href="editprofile.html"><img class="img-perfil" src="./src/descargar.jpg" alt="perfil" width="40"></a>
+            </nav>
+        </section>
+    </header>  
+    <main class="cuerpo-perfil">
+        <section class="contenido-cuerpo">
+            <div class="titulos-profile">
+                <h2 class="titulo-bienvenida titulo1">Descubre<br>tu próxima</h2>
+                <h2 class="titulo-bienvenida titulo2">gran historia.</h2>
+            </div>
+            
+            
+            <p class="frase-motivacion">
                 Miles de libros a un clic de distancia.<br>
                 Las mejores recomendaciones personalizadas para amantes de la lectura.
             </p>
-
-            <p>
-                <a href="libros.html">Explorar Libros</a>
-            </p>
-        </section>
-
-        <section>
-            <img src="" alt="">
-        </section>
-    </main>
-
-    <hr>
-
-    
-    <footer>
-
-        <h3>CESDE</h3>
-        
-        <section>
-
-            <h4>Explorar Libros</h4>
-            <h4>Categorias</h4>
             
-            <ul>
-                <li>Programación</li>
-                <li>Aventura</li>
-                <li>Ficción</li>
-                <li>Superación personal</li>
-                <li>Emprendimiento</li>
-                <li>Salud</li>
-                <li>Psicología</li>
-            </ul>
-        </section>
 
-        <section>
-            <h4>Información de contacto</h4>
-            <ul>
-                <li>Teléfono: 604 231 4121</li>
-                <li>Celular: 312 123 0210</li>
-                <li>Correo: biblioteca@cesde.net</li>
-            </ul>
+            <div class="contenedor-enlace-explorar">
+                <a class="enlace-explorar" href="libros.html">Explorar Libros</a>
+            </div>
         </section>
+    </main>    
+    <footer class="pie-pagina">
 
-        <section>
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li>Instagram: @bibliocesde</li>
-                <li>Facebook: Biblioteca Cesde</li>
-            </ul>
+        <section class="contenedor-logo-pie-pagina">
+            <a class="enlace-logo-pie-pagina" href="index.html"><img class="logo-cesde-pie-pagina" src="./src/logo-blanco.png" alt="cesde" width="140px" height="50px"></a>
         </section>
+        <div class="informacion-pie-pagina">
+            <section class="categorias-pie-pagina">
+                <h4 class="titulo-pie-pagina">Explorar Libros <br>Categorias</h4>
+                <ul class="lista-desordenada-pie-pagina">
+                    <li class="item-list-pie-pagina">Programación</li>
+                    <li class="item-list-pie-pagina">Aventura</li>
+                    <li class="item-list-pie-pagina">Ficción</li>
+                    <li class="item-list-pie-pagina">Superación personal</li>
+                    <li class="item-list-pie-pagina">Emprendimiento</li>
+                    <li class="item-list-pie-pagina">Salud</li>
+                    <li class="item-list-pie-pagina">Psicología</li>
+                </ul>
+            </section>
 
+            <section class="informacion-contacto-pie-pagina">
+                <h4 class="titulo-pie-pagina">Información de contacto</h4>
+                <ul class="lista-desordenada-pie-pagina">
+                    <li class="item-list-pie-pagina">Teléfono: 604 231 4121</li>
+                    <li class="item-list-pie-pagina">Celular: 312 123 0210</li>
+                    <li class="item-list-pie-pagina">Correo: biblioteca@cesde.net</li>
+                </ul>
+            </section>
+
+            <section class="redes-sociales-pie-pagina">
+                <h4 class="titulo-pie-pagina">Redes Sociales</h4>
+                <ul class="lista-desordenada-pie-pagina">
+                    <li class="item-list-pie-pagina">Instagram: @bibliocesde</li>
+                    <li class="item-list-pie-pagina">Facebook: Biblioteca Cesde</li>
+                </ul>
+            </section>
+        </div>
     </footer>
 
 </body>
