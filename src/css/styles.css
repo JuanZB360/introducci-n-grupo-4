@@ -190,6 +190,14 @@ form input {
     margin-left: 70%;
 }
 
+.changepassword  main form {
+    max-width: 420px;
+    margin-left: 70%;
+}
+
+.changepassword main h2 {
+    margin-left: 70%;
+}
 
 /* Para que el texto que dice que va en las cajasde texto este en negrita con margen y un espaciado*/
 label {
