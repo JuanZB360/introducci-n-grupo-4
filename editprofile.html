@@ -37,26 +37,33 @@
     <!-- Título principal / Logo -->
     <h1>
         <a href="index.html">
-            <img src="src/logo-blanco.png" alt="Logo CESDE" class="w-[120px]">
+            <img src="src/logo-blanco.png" alt="Logo CESDE" class="w-[120px] hover:text-gray-300 transition-colors duration-300">
         </a>
     </h1>
 
     <!-- Navegación -->
 <nav aria-label="Navegación principal"
-     class="flex flex-wrap md:flex-nowrap items-center gap-3 md:gap-6 ml-auto">
-        <a href="index.html" class="text-white no-underline font-medium text-shadow-[3px_3px_8px_rgba(0,0,0,0.800)] ">Home</a>
-        <a href="libros.html" class="text-white no-underline font-medium text-shadow-[3px_3px_8px_rgba(0,0,0,0.800)]">Reserva</a>
-        <a href="reservaLibro.html" class="text-white no-underline font-medium text-shadow-[3px_3px_8px_rgba(0,0,0,0.800)]">Audio Libro</a>
-        <a href="#contactenos" class="text-white no-underline font-medium text-shadow-[3px_3px_8px_rgba(0,0,0,0.800)]">Contáctanos</a>
-        <a href="profile.html">
-           <img src="src/descargar.jpg"
-     alt="Foto de perfil"
-     class="h-12 md:h-[40px] rounded-full">
+            class="flex flex-wrap md:flex-nowrap items-center gap-3 md:gap-6 ml-auto">
+            <!-- Añadí hover:text-gray-300 y hover:opacity-80 para el efecto -->
+            <a href="profile.html"
+                class="text-white no-underline font-medium text-shadow-[3px_3px_8px_rgba(0,0,0,0.800)] hover:text-gray-300 transition-colors duration-300">Home</a>
+            <a href="libros.html"
+                class="text-white no-underline font-medium text-shadow-[3px_3px_8px_rgba(0,0,0,0.800)] hover:text-gray-300 transition-colors duration-300">Reserva</a>
+            <a href="reservaLibro..html"
+                class="text-white no-underline font-medium text-shadow-[3px_3px_8px_rgba(0,0,0,0.800)] hover:text-gray-300 transition-colors duration-300">Audio
+                Libro</a>
+            <a href="#contactenos"
+                class="text-white no-underline font-medium text-shadow-[3px_3px_8px_rgba(0,0,0,0.800)] hover:text-gray-300 transition-colors duration-300">Contáctanos</a>
 
-        </a>
-    </nav>
+            <a href="profile.html" class="hover:scale-110 transition-transform duration-300">
+                <img src="src/descargar.jpg" alt="Foto de perfil"
+                    class="h-12 md:h-[40px] rounded-full border-2 border-transparent hover:border-white">
+            </a>
+        </nav>
+
+        </nav>
 </header>
-  <section class="bg-no-repeat bg-cover bg-center"
+  <section class="bg-white bg-no-repeat bg-cover bg-center md:bg-[url('src/fondo-main.jpeg')]"
   style="background-image: url('src/fondo-main.jpeg');">
 
   <main class="px-6 md:px-10 py-20 min-h-[80vh]">
@@ -141,7 +148,7 @@
             <a href="index.html">
                 <img src="src/logo-blanco.png"
                      alt="Logo CESDE"
-                     class="w-20 mb-2 text-shadow-[3px_3px_8px_rgba(0,0,0,100)]">
+                     class="w-20 mb-2 text-shadow-[3px_3px_8px_rgba(0,0,0,100)] hover:text-gray-300 transition-colors duration-300">
             </a>
             <p class="text-sm text-shadow-[3px_3px_8px_rgba(0,0,0,100)]">
                 Biblioteca virtual CESDE <br>
