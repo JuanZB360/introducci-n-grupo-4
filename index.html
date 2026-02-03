@@ -2,100 +2,107 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Biblioteca CESDE</title>
-    <link rel="stylesheet" href="src/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca CESDE</title>
+<script src="https://cdn.tailwindcss.com"></script>
 
+  
 </head>
 
-<body>
+<body class="m-0 bg-white font-sans">
 
-    <header>
-        <h1>
-            <a href="index.html">
-                <img src="src/logo-blanco.png" alt="Logo CESDE">
-            </a>
-        </h1>
+  
+  <header class="flex items-center bg-[#e91e63] px-5 py-5 text-white">
+    <h1>
+      <a href="index.html" class="inline-block">
+        <img src="src/logo-blanco.png" alt="Logo CESDE" class="w-[120px]" />
+      </a>
+    </h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="login.html">Reserva</a>
-            <a href="login.html">Audio Libro</a>
-            <a href="login.html">Contáctanos</a>
-            <a href="login.html">Login</a>
-            <a href="registro.html">Regístrate</a>
+    <nav class="ml-auto flex flex-wrap items-center gap-6">
+      <a href="index.html" class="font-medium text-white no-underline hover:underline">Home</a>
+      <a href="reservaLibro.html" class="font-medium text-white no-underline hover:underline">Reserva</a>
+      <a href="libros.html" class="font-medium text-white no-underline hover:underline">Audio Libro</a>
+      <a href="contacto.html" class="font-medium text-white no-underline hover:underline">Contáctanos</a>
+      <a href="login.html" class="font-medium text-white no-underline hover:underline">Login</a>
+      <a href="registro.html" class="font-medium text-white no-underline hover:underline">Regístrate</a>
+    </nav>
+  </header>
 
+  
+  <main class="px-10 py-16">
+    <div class="grid items-center gap-10 md:grid-cols-2">
 
-        </nav>
-    </header>
+      
+      <section>
+        <h2 class="mb-5 text-[40px] font-bold">
+          Descubre tu próxima gran historia.
+        </h2>
 
+        <p class="mb-6 max-w-[600px] text-[20px]">
+          Miles de libros a un clic de distancia.<br />
+          Las mejores recomendaciones personalizadas para amantes de la lectura.
+        </p>
 
+        <p>
+          <a href="#"
+            class="inline-block rounded-md bg-[#e91e63] px-6 py-3 font-bold text-white no-underline hover:bg-[#c2185b]">
+            Explorar Libros
+          </a>
+        </p>
+      </section>
 
+      <!-- Imagen (antes estaba vacía) -->
+      <section>
+        <img src="src/fondo-main-izquierda.jpeg" alt="Imagen principal de la biblioteca" class="h-auto w-full rounded-md" />
+      </section>
 
-    <main>
-        <section>
-            <h2>Descubre tu próxima gran historia.</h2>
+    </div>
+  </main>
 
-            <p>
-                Miles de libros a un clic de distancia.<br>
-                Las mejores recomendaciones personalizadas para amantes de la lectura.
-            </p>
+  
+  <footer class="flex flex-wrap justify-between gap-10 bg-[#e91e63] px-10 py-16 text-white">
 
-            <p>
-                <a href="login.html">Explorar Libros</a>
-            </p>
-        </section>
+    <h3 class="w-full md:w-auto">
+      <a href="index.html" class="inline-block">
+        <img src="src/logo-blanco.png" alt="Logo CESDE" class="w-[120px]" />
+      </a>
+    </h3>
 
-        <section>
-            <img src="" alt="">
-        </section>
-    </main>
+    <section class="max-w-[300px]">
+      <h4 class="mb-4 font-bold">Explorar Libros</h4>
+      <h4 class="mb-4 font-bold">Categorías</h4>
 
+      <ul class="list-none p-0">
+        <li class="mb-2">Programación</li>
+        <li class="mb-2">Aventura</li>
+        <li class="mb-2">Ficción</li>
+        <li class="mb-2">Superación personal</li>
+        <li class="mb-2">Emprendimiento</li>
+        <li class="mb-2">Salud</li>
+        <li class="mb-2">Psicología</li>
+      </ul>
+    </section>
 
+    <section class="max-w-[300px]">
+      <h4 class="mb-4 font-bold">Información de contacto</h4>
+      <ul class="list-none p-0">
+        <li class="mb-2">Teléfono: 604 231 4121</li>
+        <li class="mb-2">Celular: 312 123 0210</li>
+        <li class="mb-2">Correo: biblioteca@cesde.net</li>
+      </ul>
+    </section>
 
+    <section class="max-w-[300px]">
+      <h4 class="mb-4 font-bold">Redes Sociales</h4>
+      <ul class="list-none p-0">
+        <li class="mb-2">Instagram: @bibliocesde</li>
+        <li class="mb-2">Facebook: Biblioteca Cesde</li>
+      </ul>
+    </section>
 
-    <footer>
-
-        <h3>
-            <a href="index.html">
-    <img src="src/logo-blanco.png" alt="Logo CESDE">
-            </a>
-        </h3>
-
-        <section>
-
-            <h4>Explorar Libros</h4>
-            <h4>Categorias</h4>
-
-            <ul>
-                <li>Programación</li>
-                <li>Aventura</li>
-                <li>Ficción</li>
-                <li>Superación personal</li>
-                <li>Emprendimiento</li>
-                <li>Salud</li>
-                <li>Psicología</li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Información de contacto</h4>
-            <ul>
-                <li>Teléfono: 604 231 4121</li>
-                <li>Celular: 312 123 0210</li>
-                <li>Correo: biblioteca@cesde.net</li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li>Instagram: @bibliocesde</li>
-                <li>Facebook: Biblioteca Cesde</li>
-            </ul>
-        </section>
-
-    </footer>
+  </footer>
 
 </body>
 
