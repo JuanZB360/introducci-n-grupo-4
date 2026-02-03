@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Código Limpio - Reserva de Libro CESDE</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="icon" type="image/png" href="src/logo%20cesde.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libros.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Libros - CESDE</title>
 </head>
-<body>
-    <header>
+
+<body class="bg-white text-gray-800">
+
+    <header class="bg-pink-600 text-white p-4 flex justify-between items-center">
         <h1>
             <a href="profile.html">
-                <img src="src/logo-blanco.png" alt="Logo CESDE">
+                <img src="src/logo-blanco.png" alt="Logo CESDE" class="h-10">
             </a>
         </h1>
 
-        <nav>
-            <a href="profile.html">Home</a> |
-            <a href="libros.html">Reserva</a> |
-            <a href="libros.html">Audio Libro</a> |
-            <a href="profile.html">Contáctanos</a> |
-            <section>
-                <nav>
-                    <a href="editprofile.html"><img src="./src/descargar.jpg" alt="perfil" width="40"></a>
-                </nav>
-            </section>       
+        <nav class="flex items-center gap-4 text-sm">
+            <a href="profile.html" class="hover:underline">Home</a>
+            <a href="reservaLibro.html" class="hover:underline">Reserva</a>
+            <a href="libros.html" class="hover:underline">Audio Libro</a>
+            <a href="profile.html" class="hover:underline">Contáctanos</a>
+
+            <a href="editprofile.html">
+                <img src="./src/descargar.jpg" alt="perfil" class="w-10 h-10 rounded-full">
+            </a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Categorías</h2>
-            <ul>
+
+    <main class="p-5 grid gap-6 md:grid-cols-3">
+
+        <section class="md:col-span-1">
+            <h2 class="text-pink-600 text-xl font-semibold mb-3">Categorías</h2>
+            <ul class="space-y-2">
                 <li>Programación</li>
                 <li>Aventura</li>
                 <li>Ficción</li>
@@ -39,61 +44,120 @@
                 <li>Psicología</li>
             </ul>
         </section>
-        <section>
-            <h2>Código Limpio</h2>
-            <img src="src/WhatsApp Image 2025-12-05 at 7.15.37 PM.jpeg" alt="">
-            <br>
-            <h3>Escuchar audio libro</h3>
-            <audio controls>
-                <source src="audio/good for the ghost - Alge.mp3"></audio>
-            <h3>Robert C. Martin</h3>
-            <p>
-                "Código Limpio" de Robert C. Martin es una guía esencial que enseña a programadores a escribir código legible, eficiente y fácil de mantener, no solo con principios y patrones (funciones pequeñas, nombres significativos, manejo de errores), sino también sobre la ética profesional, la gestión de proyectos y la responsabilidad de crear software de calidad a largo plazo, presentando casos de estudio y "olores" de código para mejorar la artesanía del desarrollo ágil.
+
+        <section class="md:col-span-2 space-y-4">
+            <h2 class="text-pink-600 text-xl font-semibold">Código Limpio</h2>
+
+            <img src="src/WhatsApp Image 2025-12-05 at 7.15.37 PM.jpeg"
+                 alt="Código Limpio"
+                 class="w-full max-w-md rounded shadow">
+
+            <h3 class="font-semibold">Escuchar audio libro</h3>
+
+            <audio controls class="w-full">
+                <source src="audio/good for the ghost - Alge.mp3">
+            </audio>
+
+            <h3 class="font-semibold">Robert C. Martin</h3>
+
+            <p class="text-sm leading-relaxed">
+                "Código Limpio" de Robert C. Martin es una guía esencial que enseña
+                a programadores a escribir código legible, eficiente y fácil de mantener,
+                abordando principios, patrones y ética profesional.
             </p>
-            <button>Reservar libro físico</button>
+
+            <button
+                class="bg-pink-600 text-white px-5 py-2 rounded hover:bg-pink-700 transition">
+                Reservar libro físico
+            </button>
         </section>
     </main>
-    <footer>
 
-        <h2>
-             <a href="index.html">
-                <img src="src/logo-blanco.png" alt="Logo CESDE">
+  <footer class=" bg-[#e91e63] text-white px-6 py-6 ">
+
+    <div class="max-w-7xl mx-auto grid gap-8 md:grid-cols-4">
+
+        <!-- Logo -->
+        <div>
+            <a href="index.html">
+                <img src="src/logo-blanco.png"
+                     alt="Logo CESDE"
+                     class="w-20 mb-2 text-shadow-[3px_3px_8px_rgba(0,0,0,100)]">
             </a>
-        </h2>
-        
-        <section>
+            <p class="text-sm text-shadow-[3px_3px_8px_rgba(0,0,0,100)]">
+                Biblioteca virtual CESDE <br>
+                Recursos académicos para estudiantes
+            </p>
+        </div>
 
-            <h4>Explorar Libros</h4>
-            <h4>Categorias</h4>
-            
-            <ul>
-                <li>Programación</li>
-                <li>Aventura</li>
-                <li>Ficción</li>
-                <li>Superación personal</li>
-                <li>Emprendimiento</li>
-                <li>Salud</li>
-                <li>Psicología</li>
+        <!-- Listado de Libros -->
+        <div>
+            <h3 class="font-bold mb-3 text-shadow-[3px_3px_8px_rgba(0,0,0,25)]">📚 Categorías</h3>
+            <ul class="space-y-1 text-sm">
+                <li><a href="reserva.html#programacion" class="hover:underline">Programación</a></li>
+                <li><a href="reserva.html#aventura" class="hover:underline">Aventura</a></li>
+                <li><a href="reserva.html#ficcion" class="hover:underline">Ficción</a></li>
+                <li><a href="reserva.html#superacion" class="hover:underline">Superación personal</a></li>
+                <li><a href="reserva.html#emprendimiento" class="hover:underline">Emprendimiento</a></li>
+                <li><a href="reserva.html#salud" class="hover:underline">Salud</a></li>
+                <li><a href="reserva.html#psicologia" class="hover:underline">Psicología</a></li>
             </ul>
-        </section>
+        </div>
 
-        <section>
-            <h4>Información de contacto</h4>
-            <ul>
-                <li>Teléfono: 604 231 4121</li>
-                <li>Celular: 312 123 0210</li>
-                <li>Correo: biblioteca@cesde.net</li>
+        <!-- Contacto -->
+        <div id="contactenos">
+            <h3 class="font-bold mb-3 text-shadow-[3px_3px_8px_rgba(0,0,0,25)]">📞 Contacto</h3>
+            <ul class="space-y-2 text-sm">
+                <li>
+                    ☎️ <a href="tel:+576042314121" class="hover:underline">
+                        604 231 4121
+                    </a>
+                </li>
+                <li>
+                    📱 <a href="https://wa.me/573121230210"
+                          target="_blank"
+                          class="hover:underline">
+                        WhatsApp
+                    </a>
+                </li>
+                <li>
+                    ✉️ <a href="mailto:biblioteca@cesde.net"
+                          class="hover:underline">
+                        biblioteca@cesde.net
+                    </a>
+                </li>
             </ul>
-        </section>
+        </div>
 
-        <section>
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li>Instagram: @bibliocesde</li>
-                <li>Facebook: Biblioteca Cesde</li>
+        <!-- Redes Sociales -->
+        <div>
+            <h3 class="font-bold mb-3 text-shadow-[3px_3px_8px_rgba(0,0,0,25)]">🌐 Redes</h3>
+            <ul class="space-y-2 text-sm">
+                <li>
+                    📸 <a href="https://www.instagram.com/bibliocesde"
+                          target="_blank"
+                          class="hover:underline">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    👍 <a href="https://www.facebook.com"
+                          target="_blank"
+                          class="hover:underline">
+                        Facebook
+                    </a>
+                </li>
             </ul>
-        </section>
+        </div>
 
-    </footer>
+    </div>
+
+    <!-- Línea final -->
+    <div class="text-center text-xs mt-8 border-t border-white/30 pt-4">
+        © 2026 CESDE - Biblioteca. Todos los derechos reservados.
+    </div>
+
+</footer>
 </body>
+
 </html>
