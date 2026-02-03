@@ -244,28 +244,90 @@
         </section>
     </main>
 
-    <footer class="bg-[#e91e63] flex flex-row flex-wrap text-white p-4">
-        <section class="w-40 h-20 flex justify-center items-center">
-            <img class="object-cover" src="./src/logo-blanco.png" alt="cesde" width="140">
-        </section>
-        
-        <div class="flex-1 flex flex-row flex-wrap gap-8 p-4">
-            <section class="w-56">
-                <h4 class="text-lg font-bold mb-4 leading-tight">Explorar Libros<br>Categorías</h4>
-                <ul class="list-none text-[0.7rem] space-y-1">
-                    <li>Programación</li>
-                    <li>Aventura</li>
-                    <li>Ficción</li>
-                </ul>
-            </section>
-            <section class="w-56">
-                <h4 class="text-lg font-bold mb-4">Contacto</h4>
-                <ul class="list-none text-[0.7rem] space-y-1">
-                    <li>Teléfono: 604 231 4121</li>
-                    <li>Correo: biblioteca@cesde.net</li>
-                </ul>
-            </section>
+    <footer class=" bg-[#e91e63] text-white px-6 py-6 ">
+
+    <div class="max-w-7xl mx-auto grid gap-8 md:grid-cols-4">
+
+        <!-- Logo -->
+        <div>
+            <a href="index.html">
+                <img src="src/logo-blanco.png"
+                     alt="Logo CESDE"
+                     class="w-20 mb-2 text-shadow-[3px_3px_8px_rgba(0,0,0,100)]">
+            </a>
+            <p class="text-sm text-shadow-[3px_3px_8px_rgba(0,0,0,100)]">
+                Biblioteca virtual CESDE <br>
+                Recursos académicos para estudiantes
+            </p>
         </div>
-    </footer>
+
+        <!-- Listado de Libros -->
+        <div>
+            <h3 class="font-bold mb-3 text-shadow-[3px_3px_8px_rgba(0,0,0,25)]">📚 Categorías</h3>
+            <ul class="space-y-1 text-sm">
+                <li><a href="reserva.html#programacion" class="hover:underline">Programación</a></li>
+                <li><a href="reserva.html#aventura" class="hover:underline">Aventura</a></li>
+                <li><a href="reserva.html#ficcion" class="hover:underline">Ficción</a></li>
+                <li><a href="reserva.html#superacion" class="hover:underline">Superación personal</a></li>
+                <li><a href="reserva.html#emprendimiento" class="hover:underline">Emprendimiento</a></li>
+                <li><a href="reserva.html#salud" class="hover:underline">Salud</a></li>
+                <li><a href="reserva.html#psicologia" class="hover:underline">Psicología</a></li>
+            </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div id="contactenos">
+            <h3 class="font-bold mb-3 text-shadow-[3px_3px_8px_rgba(0,0,0,25)]">📞 Contacto</h3>
+            <ul class="space-y-2 text-sm">
+                <li>
+                    ☎️ <a href="tel:+576042314121" class="hover:underline">
+                        604 231 4121
+                    </a>
+                </li>
+                <li>
+                    📱 <a href="https://wa.me/573121230210"
+                          target="_blank"
+                          class="hover:underline">
+                        WhatsApp
+                    </a>
+                </li>
+                <li>
+                    ✉️ <a href="mailto:biblioteca@cesde.net"
+                          class="hover:underline">
+                        biblioteca@cesde.net
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div>
+            <h3 class="font-bold mb-3 text-shadow-[3px_3px_8px_rgba(0,0,0,25)]">🌐 Redes</h3>
+            <ul class="space-y-2 text-sm">
+                <li>
+                    📸 <a href="https://www.instagram.com/bibliocesde"
+                          target="_blank"
+                          class="hover:underline">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    👍 <a href="https://www.facebook.com"
+                          target="_blank"
+                          class="hover:underline">
+                        Facebook
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Línea final -->
+    <div class="text-center text-xs mt-8 border-t border-white/30 pt-4">
+        © 2026 CESDE - Biblioteca. Todos los derechos reservados.
+    </div>
+
+</footer>
 </body>
 </html>
